@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="Music.css">
+    <!-- link font Awesome -->
+    <script src="https://kit.fontawesome.com/3e67a314ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+      <div class="music-player">
+      <nav>
+        <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <img src="media/young-adults-having-fun-open-mic (2).jpg" class="song-img">
+      <h1>On My Love</h1>
+      <p>Zara Larsson feat David Guetta</p>
+      <audio id="song">
+        <source src="media/On-My-Love(PaglaSongs).mp3" type="audio/mp3">
+      </audio>
+      <input type="range" value="0" id="progress">
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+      </div>
+      </div>
+    </div>
+    <!-- link javaScript -->
+    <script src="Music.js"></script>
+</body>
+</html>
